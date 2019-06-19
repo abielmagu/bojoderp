@@ -1,0 +1,6 @@
+<?php
+
+/* INFORMATION CLIENT */
+define('COMPANY_BROWSER', $_SERVER['HTTP_USER_AGENT']);
+define('COMPANYNAME', 'NAME_COMPANY'); // 
+define('COMPANYLOGO', false);

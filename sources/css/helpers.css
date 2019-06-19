@@ -1,0 +1,276 @@
+/* TEXTS */
+.display-xs {
+	font-size: 0.25rem !important;
+}
+.display-sm {
+	font-size: 0.5rem !important;
+}
+.display-1 {
+	font-size: 1rem !important;
+}
+.display-2 {
+	font-size: 2rem !important;
+}
+.display-3 {
+	font-size: 3rem !important;
+}
+.display-4 {
+	font-size: 4rem !important;
+}
+.display-5 {
+	font-size: 5rem !important;
+}
+.text-black {
+	color: black;
+}
+.text-white {
+	color: white;
+}
+
+/* BACKGROUNDS */
+.background-white {
+	background-color: white;
+}
+.background-whitesmoke {
+	background-color: whitesmoke;
+}
+.backgroud-semiwhite {
+	background-color: rgba(255,255,255,.5) !important;
+}
+.backgroud-semiblack {
+	background-color: rgba(0,0,0,.5) !important;
+}
+.background-test {
+	background-color: fuchsia !important;
+}
+
+
+/* PADDINGS */
+.padding-less {
+	padding: 0;
+}
+
+.padding {
+	padding: 1rem;
+}
+.padding-x {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.padding-y {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.padding-top {
+	padding-top: 1rem;
+}
+.padding-right {
+	padding-right: 1rem;
+}
+.padding-bottom {
+	padding-bottom: 1rem;
+}
+.padding-left {
+	padding-left: 1rem;
+}
+
+.padding-sm {
+	padding: 0.5rem;
+}
+.padding-sm-x {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+.padding-sm-y {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.padding-sm-top {
+	padding-top: 0.5rem;
+}
+.padding-sm-right {
+	padding-right: 0.5rem;
+}
+.padding-sm-bottom {
+	padding-bottom: 0.5rem;
+}
+.padding-sm-left {
+	padding-left: 0.5rem;
+}
+
+.padding-lg {
+	padding: 2rem;
+}
+.padding-lg-x {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.padding-lg-y {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.padding-lg-top {
+	padding-top: 2rem;
+}
+.padding-lg-right {
+	padding-right: 2rem;
+}
+.padding-lg-bottom {
+	padding-bottom: 2rem;
+}
+.padding-lg-left {
+	padding-left: 2rem;
+}
+
+
+/* MARGINS */
+.margin-less {
+	margin: 0;
+}
+
+.margin {
+	margin: 1rem;
+}
+.margin-x {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.margin-y {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.margin-top {
+	margin-top: 1rem;
+}
+.margin-right {
+	margin-right: 1rem;
+}
+.margin-bottom {
+	margin-bottom: 1rem;
+}
+.margin-left {
+	margin-left: 1rem;
+}
+
+.margin-sm {
+	margin: 0.5rem;
+}
+.margin-sm-x {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.margin-sm-y {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.margin-sm-top {
+	margin-top: 0.5rem;
+}
+.margin-sm-right {
+	margin-right: 0.5rem;
+}
+.margin-sm-bottom {
+	margin-bottom: 0.5rem;
+}
+.margin-sm-left {
+	margin-left: 0.5rem;
+}
+
+.margin-lg {
+	margin: 2rem;
+}
+.margin-lg-x {
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.margin-lg-y {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.margin-lg-top {
+	margin-top: 2rem;
+}
+.margin-lg-right {
+	margin-right: 2rem;
+}
+.margin-lg-bottom {
+	margin-bottom: 2rem;
+}
+.margin-lg-left {
+	margin-left: 2rem;
+}
+
+
+/* ALIGNS */
+.vertical-center {
+	min-height: 100vh;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+}
+.vertical-middle, .vertical-middle td {
+	vertical-align: middle !important;
+}
+
+
+/* DISPLAYS */
+.block {
+	display: block;
+}
+
+/* BREAKS */
+.nowrap {
+  white-space: nowrap !important;
+}
+.page-break {
+    page-break-after: always;
+}
+.box-nobreak {
+    page-break-inside: avoid;
+}
+.box-nobreak:last-child {
+    page-break-after: auto;
+}
+
+
+/* COUNTERS */
+.countify {
+  counter-reset: countify;
+}
+.show-countify::before {
+  counter-increment: countify;
+  content: counter(countify) !important;
+}
+.table-counter {
+	counter-reset: line;
+}
+.table-counter tbody tr {
+	counter-increment: line;
+}
+.table-counter tbody tr td:first-child::after {
+	content: counter(line);
+	text-align: center;
+	width: 100%;
+}
+
+
+/* EFFECTS */
+.rotator {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  transition: transform 0.25s linear;
+}
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/*
+HELPS
+https://www.w3schools.com/cssref/pr_gen_counter-increment.asp
+*/

@@ -1,0 +1,34 @@
+@media print{
+	* {
+		color: inherit !important;
+		background: inherit !important;
+	}
+	body {
+		-webkit-print-color-adjust: exact !important;
+		print-color-adjust: exact !important;      
+	}
+	a {
+		display: none !important
+	}
+	a[href]::after {
+		content: none !important;
+	}
+	.progress {
+		background-color: #F5F5F5 !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F5F5F5', endColorstr='#F5F5F5')" !important;
+	}
+	.progress-bar-info {
+		display: block !important;
+		background-color: #5BC0DE !important;
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5BC0DE', endColorstr='#5BC0DE')" !important;
+	}
+	.progress, .progress > .progress-bar {
+		display: block !important;
+		-webkit-print-color-adjust: exact !important;
+		box-shadow: inset 0 0 !important;
+		-webkit-box-shadow: inset 0 0 !important;
+	}
+	svg { 
+		width: 100% !important; 
+	}
+}
